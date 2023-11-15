@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Piedra-Papael-Tijera</title>
+</head>
+<body>
+    <section class="inicio" id="inicio">
+        <h1>PIEDRA🤜🏻- PAPEL🫱🏻- TIJERA✌🏻</h1>
+        <p>created by: benjamin sobarzo</p>
+        <button id="init-game">JUGAR</button>
+        
+    </section>
+    <section class="contenedor" id="juego">
+        <div class="marco"></div>
+        <div class="seccion">
+            <span>TU</span>
+            <div class="opcion" id="p1"></div>
+            <select name="asunto" id="opciones">
+                <option value="piedra">piedra</option>
+                <option value="papel">papel</option>
+                <option value="tijera">tijera</option>
+            </select>
+            
+        </div>
+        <div class="controladores">
+          <button id="btn-start">START</button>
+          <div id="temp">3</div>
+          <div id="mensaje">
+            <div id="ganador"></div>
+            <button id="restablecer">reiniciar</button>
+          </div>
+        </div>
+        <div class="seccion">
+            <span>oponente</span>
+            <div class="opcion" id="p2"></div>
+            <div id="mensaje-oponente"></div>
+            
+        </div>
+
+    </section>
+    <audio id="fondo" autoplay loop>
+        <source src="velvet-pulse-173852.mp3" type="audio/mp3">
+    </audio>
+    <script src="main.js"></script>
+</body>
+</html>

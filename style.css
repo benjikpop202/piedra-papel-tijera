@@ -1,0 +1,225 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(https://previews.123rf.com/images/krol/krol1608/krol160800015/60555810-fondo-transparente-para-juegos-o-aplicaciones-de-desarrollo-m%C3%B3vil-paisaje-de-dibujos-animados-con.jpg);
+    background-size: cover;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100vh;
+}
+
+.inicio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90vmax;
+    height: 40vmax;
+    background: url(Estampado\ dibujado\ de\ la\ vuelta\ al\ cole\ _\ Vector\ Gratis.jpeg);
+    border-radius: 30px;
+    
+}
+
+.inicio h1{
+    margin-top: 100px;
+    font-size: 5.5vmin;
+    color: #fff;
+    border: 3px solid #fff;
+    border-radius: 20px;
+    padding: 3vmin 4vmin;
+    background-color: blueviolet;
+}
+.inicio p{
+    margin-top: 30px;
+    color:#fff;
+    font-size: 4vmin;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.inicio button{
+    margin-top: 30px;
+    padding: 3vmin 5vmin;
+    background-color: blueviolet;
+    color: #fff;
+    border-radius: 30px;
+    border: 2px solid #fff;
+    font-weight: bold;
+    font-size: 3vmin;
+    transition: 0.5s ease;
+}
+
+.inicio button:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+.contenedor{
+ display: none;
+ width: 90vmax;
+ height: 40vmax;
+ background-color: blueviolet;
+ border-radius: 30px;
+}
+
+.seccion{
+    display: flex;
+    height: 100%;
+    width: 35vmax;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.opcion{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 25vmin;
+    height: 25vmin;
+    border-radius: 100%;
+    font-size: 10vmin;
+    background-color: lightgreen;
+    text-shadow: 0 0 10px #333;
+    
+}
+#opciones{
+    margin-top: 20px;
+    width: 20vmin;
+    height: 6vmin;
+    background: transparent;
+    text-align: center;
+    color: pink;
+    border: 2px solid pink;
+    font-size: 4vmin;
+}
+
+#btn-start{
+    padding: 4vmin 6vmin ;
+    font-size: 4vmin;
+    background: linear-gradient(45deg,lightgreen, blueviolet);
+    color: #fff;
+    border: 3px solid #fff;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: 0.5s;
+    
+}
+
+#btn-start:hover{
+    transform: scale(1.1);
+}
+
+#temp{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    font-size: 6vmin;
+    width: 20vmin;
+    height: 20vmin;
+    border-radius: 100%;
+    background-color: violet;
+    color: aquamarine;
+    border: 3px solid #fff;
+}
+
+#mensaje-oponente{
+    margin-top: 20px;
+    width: 20vmin;
+    height: 6vmin;
+    text-align: center;
+    color: pink;
+    border: 2px solid pink;
+    font-size: 4vmin;
+}
+
+.controladores{
+    display: flex;
+    height: 100%;
+    width: 20vmax;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#mensaje{
+    display: none;
+    width: 40vmin;
+    height: 30vmin;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+#mensaje #restablecer{
+    padding: 3vmin 6vmin;
+    font-size: 3vmin;
+    background-color: orange;
+    margin: 20px;
+    color: #fff;
+    border-radius: 20px;
+    border: 3px solid #fff;
+    transition: 0.5s;
+}
+#restablecer:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+#mensaje #ganador{
+    width: 100%;
+    height: 20vmin;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 5vmin;
+    border: 3px solid #fff;
+}
+span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 4vmin;
+    width: 25vmin;
+    height: 6vmin;
+    background-color: orange;
+    color: #fff;
+    border-radius: 50px;
+    border: 2px solid #fff;
+    margin: 12px;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+
+    .contenedor{
+        height: 100vmax;
+        width: 90vmax;
+        border-radius: 0;
+        flex-direction: column;
+    }
+
+    .inicio{
+        height: 100vmax;
+        width: 90vmax;
+        border-radius: 0;
+    }
+
+    .seccion{
+        width: 100%;
+        height: 40vmax;
+        
+    }
+
+    .controladores{
+        width: 100%;
+        height: 20vmax;
+    }
+    
+  }
