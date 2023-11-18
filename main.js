@@ -96,6 +96,7 @@ const Temporizador = () =>{
 start.addEventListener("click", ()=>{
      start.style.display = "none"
      temp.style.display = "flex"
+     opciones.disabled = true
      Temporizador()
      conteo.play()
 })
